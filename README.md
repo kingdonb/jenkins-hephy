@@ -118,7 +118,7 @@ the DefaultDeny namespace annotation. Note: this will enforce policy for _all_ p
     kubectl annotate namespace default "net.beta.kubernetes.io/network-policy={\"ingress\":{\"isolation\":\"DefaultDeny\"}}"
 
 
-Install helm chart with network policy enabled: 
+Install helm chart with network policy enabled:
 
     $ helm install stable/jenkins --set NetworkPolicy.Enabled=true
 
@@ -182,7 +182,7 @@ If running upon a cluster with RBAC enabled you will need to do the following:
 ## Run Jenkins as non root user
 
 The default settings of this helm chart let Jenkins run as root user with uid `0`.
-Due to security reasons you may want to run Jenkins as a non root user. 
+Due to security reasons you may want to run Jenkins as a non root user.
 Fortunately the default jenkins docker image `jenkins/jenkins` contains a user `jenkins` with uid `1000` that can be used for this purpose.  
 
 Simply use the following settings to run Jenkins as `jenkins` user with uid `1000`.
