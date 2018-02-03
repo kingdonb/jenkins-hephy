@@ -57,8 +57,8 @@ Master:
     - credentials-binding:1.14
     - git:3.7.0
     - ssh-agent:1.15
-    - ownership:0.10.0
-    - cloudbees-folder:6.2.0
+    - ownership:0.11.0
+    - cloudbees-folder:6.3
     - thinBackup:1.9
   # Used to approve a list of groovy functions in pipelines used the script-security plugin. Can be viewed under /scriptApproval
   # ScriptApproval:
