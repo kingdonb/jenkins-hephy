@@ -51,11 +51,15 @@ Master:
   # JMXPort: 4000
   # List of plugins to be install during Jenkins master start
   InstallPlugins:
-    - kubernetes:1.1
+    - kubernetes:1.2
     - workflow-aggregator:2.5
-    - workflow-job:2.15
-    - credentials-binding:1.13
-    - git:3.6.4
+    - workflow-job:2.17
+    - credentials-binding:1.14
+    - git:3.7.0
+    - ssh-agent:1.15
+    - ownership:0.10.0
+    - cloudbees-folder:6.2.0
+    - thinBackup:1.9
   # Used to approve a list of groovy functions in pipelines used the script-security plugin. Can be viewed under /scriptApproval
   # ScriptApproval:
   #   - "method groovy.json.JsonSlurperClassic parseText java.lang.String"
