@@ -69,6 +69,7 @@ Master:
     - jackson2-api:2.8.11.1
     - jsch:0.1.54.2
     - junit:1.24
+    - job-dsl:1.68
   # Used to approve a list of groovy functions in pipelines used the script-security plugin. Can be viewed under /scriptApproval
   # ScriptApproval:
   #   - "method groovy.json.JsonSlurperClassic parseText java.lang.String"
