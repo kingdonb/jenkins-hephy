@@ -6,7 +6,7 @@
 Master:
   Name: jenkins-master
   Image: "jenkins/jenkins"
-  ImageTag: "2.89.3"
+  ImageTag: "2.89.4"
   ImagePullPolicy: "IfNotPresent"
 # ImagePullSecret: jenkins
   Component: "jenkins-master"
@@ -51,15 +51,23 @@ Master:
   # JMXPort: 4000
   # List of plugins to be install during Jenkins master start
   InstallPlugins:
-    - kubernetes:1.2
+    - kubernetes:1.2.1
+    - docker-workflow:1.15.1
+    - durable-task:1.18
     - workflow-aggregator:2.5
+    - workflow-cps:2.45
+    - workflow-durable-task-step:2.19
     - workflow-job:2.17
     - credentials-binding:1.15
     - git:3.7.0
+    - script-security:1.41
     - ssh-agent:1.15
+    - structs:1.14
     - ownership:0.11.0
     - cloudbees-folder:6.3
     - thinBackup:1.9
+    - jackson2-api:2.8.11.1
+    - jsch:0.1.54.2
     - junit:1.24
   # Used to approve a list of groovy functions in pipelines used the script-security plugin. Can be viewed under /scriptApproval
   # ScriptApproval:
