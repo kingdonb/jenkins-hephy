@@ -82,7 +82,8 @@ Master:
     - ansicolor:0.5.2
     - build-name-setter:1.6.9
     - build-timeout:1.19
-    - docker-workflow:1.15.1
+    - docker-commons:1.12
+    - docker-workflow:1.16
     - durable-task:1.22
     - workflow-aggregator:2.5
     - workflow-api:2.27
@@ -93,7 +94,8 @@ Master:
     - conditional-buildstep:1.3.6
     - credentials-binding:1.16
     - ghprb:1.40.0
-    - git:3.8.0
+    - git:3.9.0
+    - git-client:2.7.2
     - github:1.29.0
     - htmlpublisher:1.16
     - pipeline-rest-api:2.10
